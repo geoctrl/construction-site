@@ -1,0 +1,112 @@
+$card-padding: 20px;
+
+.card {
+  background-color: #fff;
+  border: solid 1px $color-grey-100;
+  border-radius: $border-radius-base;
+}
+
+.card-grey {
+	@extend .card;
+	background-color: #f9f9f9;
+	border-color: $color-grey-75;
+}
+
+.card__loading {
+  background: #fff;
+  height: 100px;
+  position: relative;
+  margin-top: 24px;
+
+  @include loader($color-primary-500, 30px);
+}
+
+.card-padding {
+  padding: $card-padding;
+}
+.card-padding-vert {
+  padding-top: $card-padding;
+  padding-bottom: $card-padding;
+}
+
+.card-padding-horiz {
+  padding-left: $card-padding;
+  padding-right: $card-padding;
+}
+
+.card__header {
+  border-bottom: solid 1px #c3c3c3;
+  padding-bottom: $base-spacing-half;
+}
+
+.card__title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.card__sub-title {
+  margin-top: 4px;
+  display: block;
+}
+
+.card__sub-name {
+  color: $color-grey-500;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.card__retrieved {
+  font-style: italic;
+  font-size: 12px;
+  color: $color-grey-500;
+  margin-top: 4px;
+}
+
+.card-detail {
+  margin-bottom: 4px;
+
+  .card-detail__title {
+    font-size: 10px;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+  }
+
+  .card-detail__value {
+    font-weight: 700;
+  }
+}
+
+.card__substitution {
+  font-size: 18px;
+  font-weight: 700;
+  color: $color-error-500;
+}
+
+.card-paragraph__title {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.card__lock {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+
+  svg.icon {
+    height: 20px;
+    fill: $color-primary-500;
+  }
+}
+
+.card-requested {
+  text-align: center;
+  color: $color-grey-500;
+  padding: 8px 0 7px 0;
+  font-weight: 700;
+
+  svg.icon {
+    height: 18px;
+    fill: $color-success-500;
+  }
+}

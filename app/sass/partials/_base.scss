@@ -1,0 +1,206 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body, html {
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	color: $color-grey-900;
+	font-family: 'Roboto', Helvetica, sans-serif;
+	font-weight: $font-weight-normal;
+	font-size: 14px;
+	background-color: #fff;
+	-webkit-font-smoothing: antialiased;
+}
+
+.mix-blend-mode-normarl {
+	mix-blend-mode: normal;
+}
+
+button {
+	user-select: none;
+	cursor: default;
+}
+
+a {
+	cursor: pointer;
+	color: $link-color;
+	text-decoration: none;
+
+	&:hover, &:active {
+		text-decoration: $link-hover-decoration;
+		color: $link-hover-color;
+	}
+}
+
+.h-dashed {
+	font-family: $font-glober;
+	font-weight: 800;
+	border: dashed 2px $color-grey-500;
+	display: inline-block;
+	padding: 12px 34px 12px 34px;
+	border-radius: 500px;
+
+}
+
+.collapsing {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	transition-property: height, visibility;
+	transition-duration: .35s;
+	transition-timing-function: ease;
+}
+
+// ellipsis
+.ellipsis {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.loading-default {
+	position: relative;
+	height: 100px;
+	@include loader($color-primary-500, 30px);
+}
+
+.white-space-no-wrap {
+	white-space: nowrap;
+}
+
+
+.icon {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	fill: #404040;
+
+	svg {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+.rel {
+	position: relative;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.white-space {
+	white-space: pre-wrap;
+}
+
+.va-middle      { vertical-align: middle; }
+
+.strong         { font-weight: $font-weight-bold; }
+.muted          { opacity: 0.6; }
+
+// quick margin classes
+.mr-none        { margin-right: 0 !important; }
+.mr-sm          { margin-right: 5px !important; }
+.mr-md          { margin-right: 10px !important; }
+.mr-lg          { margin-right: 20px !important; }
+.mr-none        { margin-right: 0 !important; }
+.ml-none        { margin-left: 0 !important; }
+.ml-sm          { margin-left: 5px !important; }
+.ml-md          { margin-left: 10px !important; }
+.ml-lg          { margin-left: 20px !important; }
+.mt-none        { margin-top: 0 !important; }
+.mt-sm          { margin-top: 5px !important; }
+.mt-md          { margin-top: 10px !important; }
+.mt-lg          { margin-top: 20px !important; }
+.mb-none        { margin-bottom: 0 !important; }
+.mb-sm          { margin-bottom: 5px !important; }
+.mb-md          { margin-bottom: 10px !important; }
+.mb-lg          { margin-bottom: 20px !important; }
+.m-sm           { margin: 5px !important; }
+.m-md           { margin: 10px !important; }
+.m-lg           { margin: 20px !important; }
+.m-0            { margin: 0 !important; }
+
+// quick padding classes
+.pr-none        { padding-right: 0 !important; }
+.pr-sm          { padding-right: 5px !important; }
+.pr-md          { padding-right: 10px !important; }
+.pr-lg          { padding-right: 20px !important; }
+.pl-none        { padding-left: 0 !important; }
+.pl-sm          { padding-left: 5px !important; }
+.pl-md          { padding-left: 10px !important; }
+.pl-lg          { padding-left: 20px !important; }
+.pt-none        { padding-top: 0 !important; }
+.pt-sm          { padding-top: 5px !important; }
+.pt-md          { padding-top: 10px !important; }
+.pt-lg          { padding-top: 20px !important; }
+.pb-none        { padding-bottom: 0 !important; }
+.pb-sm          { padding-bottom: 5px !important; }
+.pb-md          { padding-bottom: 10px !important; }
+.pb-lg          { padding-bottom: 20px !important; }
+.p-sm           { padding: 5px !important; }
+.p-md           { padding: 10px !important; }
+.p-lg           { padding: 20px !important; }
+.p-0            { padding: 0 !important; }
+
+.color-primary  { color: $color-primary-500 !important; fill: $color-primary-500 !important;}
+.color-accent   { color: $color-accent-600 !important; fill: $color-accent-600 !important;}
+.color-success  { color: $color-success-500 !important; fill: $color-success-500 !important; }
+.color-error    { color: $color-error-500 !important; fill: $color-error-500 !important; }
+.color-warning  { color: $color-warning-500 !important; fill: $color-warning-500 !important; }
+.color-grey     { color: $color-grey-300 !important; fill: $color-grey-300 !important; }
+.color-white    { color: #fff !important; fill: #fff !important; }
+
+//quick min-height classes
+.mh-100 {
+	min-height: 100%;
+}
+
+.h-100 {
+	height: 100%;
+}
+
+
+// quick background color classes
+.bg--white {
+	background: white;
+}
+
+.bg--grey-75 {
+	background: $color-grey-75;
+}
+
+// quick display classes
+.ib {
+	display: inline-block;
+}
+
+.weight-normal {
+	font-weight: 400 !important;
+}
+
+.stretch {
+	@include stretch();
+}
+
+
+// don't really have a place to put this...
+
+.caret {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin-left: 2px;
+	vertical-align: middle;
+	border-top:   $caret-width-base dashed;
+	border-top:   $caret-width-base solid \9; // IE8
+	border-right: $caret-width-base solid transparent;
+	border-left:  $caret-width-base solid transparent;
+}

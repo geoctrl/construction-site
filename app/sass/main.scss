@@ -1,0 +1,28 @@
+
+// variables and mixins
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/utilities";
+
+
+// partials
+@import "partials/normalize";
+@import "partials/base";
+@import "partials/icons";
+@import "partials/responsive-utilities";
+@import "partials/type";
+@import "partials/buttons";
+@import "partials/_pagination";
+@import "partials/forms";
+@import "partials/tables";
+@import "partials/grid";
+@import "partials/flex-grid";
+@import "partials/list";
+@import "partials/page";
+@import "partials/cards";
+@import "partials/well";
+
+// pages
+@import "pages/home";
+
+@import "../../node_modules/swiper/dist/css/swiper.css";

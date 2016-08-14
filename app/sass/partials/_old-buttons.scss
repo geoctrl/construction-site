@@ -1,0 +1,319 @@
+//
+// Buttons
+// --------------------------------------------------
+
+
+// Base styles
+// --------------------------------------------------
+
+.btn {
+  display: inline-block;
+  margin-bottom: 0; // For input.btn
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background: transparent;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border: 1px solid transparent;
+  white-space: nowrap;
+  @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $btn-border-radius-base);
+  user-select: none;
+
+  &,
+  &:active,
+  &.btn--active {
+    &:focus,
+    &.focus {
+      outline: none;
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &.focus {
+    color: $btn-default-color;
+    text-decoration: none;
+  }
+
+  &:active,
+  &.btn--active {
+    outline: 0;
+    background-image: none;
+    box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    cursor: $cursor-disabled;
+    opacity: .65;
+    box-shadow: none;
+  }
+
+  .icon {
+    height: 20px;
+    width: 20px;
+  }
+
+  // [converter] extracted a& to a.btn
+}
+
+a.btn {
+  &.disabled,
+  fieldset[disabled] & {
+    pointer-events: none; // Future-proof disabling of clicks on `<a>` elements
+  }
+}
+
+
+
+// Alternate buttons
+// --------------------------------------------------
+
+                          // color          // background    // border
+//.btn-default {
+//  @include button-variant($color-grey-700, $color-grey-75, $color-grey-300);
+//}
+
+.btn-primary {
+  @include button-variant($color-primary-500, transparent, $color-primary-500);
+}
+
+.btn-primary-fill {
+  @include button-variant-fill(#fff, $color-primary-500, $color-primary-500);
+}
+
+.btn-accent {
+  @include button-variant($color-accent-600, transparent, $color-accent-600);
+}
+
+.btn-accent-fill {
+  @include button-variant-fill(#fff, $color-accent-600, $color-accent-700);
+}
+
+.btn-success {
+  @include button-variant($color-success-500, transparent, $color-success-500);
+}
+
+.btn-success-fill {
+  @include button-variant-fill(#fff, $color-success-500, $color-success-600);
+}
+
+.btn-warning {
+  @include button-variant($color-warning-500, transparent, $color-warning-500);
+}
+
+.btn-warning-fill {
+  @include button-variant-fill(#fff, $color-warning-500, $color-warning-600);
+}
+
+.btn-error {
+  @include button-variant($color-error-500, transparent, $color-error-500);
+}
+
+.btn-error-fill {
+  @include button-variant-fill(#fff, $color-error-500, $color-error-500);
+}
+
+.btn-grey {
+  @include button-variant($color-grey-500, transparent, $color-grey-100);
+}
+
+.btn-grey-fill {
+  @include button-variant($color-grey-500, $color-grey-25, $color-grey-100);
+}
+
+.btn-grey-transparent {
+  @include button-variant-transparent($color-grey-500, $color-grey-500);
+}
+
+.btn-white {
+	@include button-variant(#fff, transparent, #fff, $color-grey-500);
+}
+
+.btn-white-transparent {
+  @include button-variant-transparent(#fff, rgba(#000, .1));
+}
+
+
+// Link buttons
+// -------------------------
+
+// Make a button look and behave like a link
+.btn-link {
+  color: $link-color;
+  font-weight: normal;
+  border-radius: 0;
+
+  &,
+  &:active,
+  &.btn--active,
+  &[disabled],
+  fieldset[disabled] & {
+    background-color: transparent;
+    box-shadow: none;
+  }
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: transparent;
+  }
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+    background-color: transparent;
+  }
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus {
+      color: $btn-link-disabled-color;
+      text-decoration: none;
+    }
+  }
+}
+
+.btn-square {
+	width: 31px;
+  padding-left: 0;
+  padding-right: 0;
+
+  svg.icon {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+
+// Button Sizes
+// --------------------------------------------------
+
+.btn-lg {
+  // line-height: ensure even-numbered height of button next to large input
+	@media (min-width: $screen-md-min) {
+		@include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $border-radius-base);
+	}
+}
+.btn-sm {
+  // line-height: ensure proper height of button next to small input
+  @include button-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $border-radius-base);
+}
+.btn-xs {
+  @include button-size($padding-xs-vertical, $padding-xs-horizontal, $font-size-small, $line-height-small, $border-radius-base);
+}
+
+
+// Block button
+// --------------------------------------------------
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+// Vertically space out multiple block buttons
+.btn-block + .btn-block {
+  margin-top: 5px;
+}
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.btn-block {
+    width: 100%;
+  }
+}
+
+.btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  height: 26px;
+  padding: 0 4px;
+  color: $color-grey-100;
+  background-color: transparent;
+
+  svg.icon {
+    height: 16px;
+    width: 16px;
+    fill: $color-grey-400;
+  }
+
+  &:hover, &:active {
+    background-color: rgba(#000, .05);
+  }
+
+  &.btn-close-light svg.icon {
+    fill: #fff;
+  }
+}
+
+.btn-small {
+  height: 24px;
+  width: 24px;
+  padding: 0;
+  line-height: 22px;
+
+  svg.icon {
+    height: 20px;
+    width: 20px;
+    vertical-align: inherit;
+  }
+}
+
+
+
+.number-btn {
+	line-height: 2.3;
+	padding: 0;
+}
+
+.number-btn__inner {
+	padding: 0 8px;
+}
+
+.number-btn__number-container {
+	color: white;
+	background: $color-primary-500;
+}
+
+
+.btn-row {
+	.btn {
+		margin-right: 10px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+
+
+
+.multi-toggle-btn {
+	display: inline-block;
+	border: 1px solid $color-grey-400;
+	color: $color-grey-500;
+	padding: 5px;
+	font-size: 0.9em;
+
+	&:first-child {
+		border-radius: $border-radius-base 0 0 $border-radius-base;
+	}
+
+	&:last-child {
+		border-radius: 0 $border-radius-base $border-radius-base 0;
+	}
+
+	&.btn--active {
+		background: $color-primary-500;
+		color: white;
+		border-right: 1px solid $color-primary-500;
+	}
+}

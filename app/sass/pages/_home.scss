@@ -1,0 +1,146 @@
+.home-fold {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right center;
+	padding-bottom: 100px;
+}
+
+.home-fold__logo {
+	padding: 20px;
+	border-radius: 0 0 4px 4px;
+	margin-bottom: 30px;
+	width: 210px;
+	background-color: #ffed6f;
+	position: relative;
+	text-align: left;
+
+	svg {
+		width: 160px;
+		fill: $color-grey-900;
+	}
+}
+
+.home-fold__content {
+	color: #fff;
+	margin-bottom: 20px;
+
+	a {
+		display: block;
+		margin-bottom: 14px;
+	}
+}
+
+.home-fold__title {
+	font-size: 40px;
+	font-weight: 900;
+	margin-bottom: 4px;
+	text-shadow: 0 2px 2px rgba(#000, .4);
+}
+
+.home-fold__tag {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.3em;
+	text-shadow: 0 2px 2px rgba(#000, .4);
+	margin-bottom: 20px;
+}
+
+@media (min-width: $screen-sm-min) {
+	.home-fold {
+		padding-bottom: 180px;
+	}
+
+	.home-fold__logo {
+		padding-top: 100px;
+		margin-bottom:  60px;
+	}
+
+	.home-fold__content {
+		max-width: 660px;
+
+		a {
+			display: inline-block;
+			margin-right: 20px;
+		}
+	}
+
+	.home-fold__title {
+		font-size: 56px;
+	}
+
+	.home-fold__tag {
+		font-size: 24px;
+	}
+}
+
+
+.home-proof {
+	padding: 80px 0;
+}
+
+.home-proof__title {
+	font-size: 40px;
+	font-weight: 900;
+	margin-bottom: 4px;
+}
+
+.home-proof__tag {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.3em;
+	color: $color-grey-600;
+}
+
+
+.home-proof__content-mobile {
+	margin-top: 40px;
+}
+
+.home-proof__content-mobile-image {
+	height: 260px;
+	display: block;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+.home-proof__gallery {
+	display: none;
+}
+
+.home-proof__gallery-item-container {
+	width: 25%;
+	float: left;
+	padding: 5px;
+}
+
+.home-proof__gallery-item {
+	position: relative;
+	width: 100%;
+	padding-bottom: 60%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+.home-proof__gallery-item-image {
+}
+
+@media (min-width: $screen-sm-min) {
+
+
+	.home-proof__tag {
+		width: 600px;
+		margin-bottom: 40px;
+	}
+
+	.home-proof__content-mobile {
+		display: none;
+	}
+
+	.home-proof__gallery {
+		display: block;
+	}
+
+}

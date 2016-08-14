@@ -1,0 +1,39 @@
+//see basscss (https://github.com/basscss/basscss) for basis of these classes
+
+.flex {
+	display: flex;
+}
+
+//fh = full height
+.flex-fh {
+	display: flex;
+	height: 100%;
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-end {
+	align-items: flex-end;
+}
+
+.flex-justify {
+	justify-content: space-between;
+}
+
+.flex-stretch {
+	align-items: stretch;
+}
+
+
+
+.flex-auto {
+	flex: 1 1 auto;
+}

@@ -1,0 +1,388 @@
+
+// colors
+
+$color-primary-500: #ffed6f !default;
+$color-primary-100: lighten($color-primary-500, 32%);
+$color-primary-200: lighten($color-primary-500, 24%);
+$color-primary-300: lighten($color-primary-500, 16%);
+$color-primary-400: lighten($color-primary-500, 8%);
+$color-primary-600: darken($color-primary-500, 8%);
+$color-primary-700: darken($color-primary-500, 16%);
+$color-primary-800: darken($color-primary-500, 24%);
+$color-primary-900: darken($color-primary-500, 32%);
+
+$color-accent-500: #7c80d6 !default;
+$color-accent-100: lighten($color-accent-500, 32%);
+$color-accent-200: lighten($color-accent-500, 24%);
+$color-accent-300: lighten($color-accent-500, 16%);
+$color-accent-400: lighten($color-accent-500, 8%);
+$color-accent-600: darken($color-accent-500, 8%);
+$color-accent-700: darken($color-accent-500, 16%);
+$color-accent-800: darken($color-accent-500, 24%);
+$color-accent-900: darken($color-accent-500, 32%);
+
+$color-error-500: #ff695f !default;
+$color-error-100: lighten($color-error-500, 32%);
+$color-error-200: lighten($color-error-500, 24%);
+$color-error-300: lighten($color-error-500, 16%);
+$color-error-400: lighten($color-error-500, 8%);
+$color-error-600: darken($color-error-500, 8%);
+$color-error-700: darken($color-error-500, 16%);
+$color-error-800: darken($color-error-500, 24%);
+$color-error-900: darken($color-error-500, 32%);
+
+$color-warning-500: #ffa75f !default;
+$color-warning-100: lighten($color-warning-500, 32%);
+$color-warning-200: lighten($color-warning-500, 24%);
+$color-warning-300: lighten($color-warning-500, 16%);
+$color-warning-400: lighten($color-warning-500, 8%);
+$color-warning-600: darken($color-warning-500, 8%);
+$color-warning-700: darken($color-warning-500, 16%);
+$color-warning-800: darken($color-warning-500, 24%);
+$color-warning-900: darken($color-warning-500, 32%);
+
+$color-success-500: #86cf82 !default;
+$color-success-100: lighten($color-success-500, 32%);
+$color-success-200: lighten($color-success-500, 24%);
+$color-success-300: lighten($color-success-500, 16%);
+$color-success-400: lighten($color-success-500, 8%);
+$color-success-600: darken($color-success-500, 8%);
+$color-success-700: darken($color-success-500, 16%);
+$color-success-800: darken($color-success-500, 24%);
+$color-success-900: darken($color-success-500, 32%);
+
+$color-grey-10: #f9f9f9 !default;
+$color-grey-25: #f3f3f3 !default;
+$color-grey-50: #ebebeb !default;
+$color-grey-75: #e3e3e3 !default;
+$color-grey-100: #d3d3d3 !default;
+$color-grey-200: #c3c3c3 !default;
+$color-grey-300: #b3b3b3 !default;
+$color-grey-400: #a3a3a3 !default;
+$color-grey-500: #808080 !default;
+$color-grey-600: #707070 !default;
+$color-grey-700: #606060 !default;
+$color-grey-800: #505050 !default;
+$color-grey-900: #404040 !default;
+
+$color-primary-light: #E6F1FF !default;
+
+
+// Scaffolding
+
+$body-bg: #fff !default;
+$text-color: $color-grey-900 !default;
+$link-color: $color-primary-500 !default;
+$link-hover-color: darken($link-color, 15%) !default;
+$link-hover-decoration: underline !default;
+
+
+
+// Typography
+
+$font-family-sans-serif:   "Roboto", Helvetica, Arial, sans-serif !default;
+$font-family-serif:        'Merriweather', "Times New Roman", serif !default;
+$font-family-monospace:    Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base:         $font-family-sans-serif !default;
+$font-glober:              'glober', 'Roboto', sans-serif;
+
+$font-size-base:           14px !default;
+$font-size-large:          ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-small:          ceil(($font-size-base * 0.85)) !default; // ~12px
+
+$font-size-h1:             floor(($font-size-base * 2.6)) !default; // ~36px
+$font-size-h2:             floor(($font-size-base * 2.15)) !default; // ~30px
+$font-size-h3:             ceil(($font-size-base * 1.5)) !default; // ~24px
+$font-size-h4:             ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-h5:             $font-size-base !default;
+$font-size-h6:             ceil(($font-size-base * 0.85)) !default; // ~12px
+
+$line-height-base:         1.428571429 !default; // 20/14
+$line-height-computed:     floor(($font-size-base * $line-height-base)) !default; // ~20px
+
+//** By default, this inherits from the `<body>`.
+$headings-font-family:     inherit !default;
+$headings-font-weight:     700 !default;
+$headings-line-height:     1.2 !default;
+$headings-color:           inherit !default;
+
+
+
+// Components
+
+$padding-base-vertical:     6px !default;
+$padding-base-horizontal:   12px !default;
+
+$padding-large-vertical:    10px !default;
+$padding-large-horizontal:  16px !default;
+
+$padding-small-vertical:    5px !default;
+$padding-small-horizontal:  10px !default;
+
+$padding-xs-vertical:       1px !default;
+$padding-xs-horizontal:     5px !default;
+
+$line-height-large:         1.3333333 !default;
+$line-height-small:         1.5 !default;
+
+$border-radius-base:        3px !default;
+$border-radius-large:       4px !default;
+$border-radius-small:       1px !default;
+
+$component-active-color:    #fff !default;
+$component-active-bg:       $color-primary-500 !default;
+
+$caret-width-base:          4px !default;
+$caret-width-large:         5px !default;
+
+
+
+// font weights
+
+$font-weight-thin: 100 !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-medium: 500 !default;
+$font-weight-bold: 700 !default;
+$font-weight-ultra: 900 !default;
+
+
+
+// Tables
+
+//** Padding for `<th>`s and `<td>`s.
+$table-cell-padding:            14px !default;
+//** Padding for cells in `.table-condensed`.
+$table-condensed-cell-padding:  8px 10px !default;
+
+//** Default background color used for all tables.
+$table-bg:                      transparent !default;
+//** Background color used for `.table-striped`.
+$table-bg-accent:               #f9f9f9 !default;
+//** Background color used for `.table-hover`.
+$table-bg-hover:                #f5f5f5 !default;
+$table-bg-active:               $table-bg-hover !default;
+
+//** Border color for table and cell borders.
+$table-border-color:            #ddd !default;
+
+
+
+// Buttons
+
+$btn-font-weight:                normal !default;
+$btn-default-color:              $color-grey-700 !default;
+$btn-link-disabled-color:        $color-grey-300 !default;
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius-base:         $border-radius-base !default;
+$btn-border-radius-large:        $border-radius-large !default;
+$btn-border-radius-small:        $border-radius-small !default;
+
+
+
+// Forms
+
+//** `<input>` background color
+$input-bg:                       #fff !default;
+//** `<input disabled>` background color
+$input-bg-disabled:              $color-grey-25 !default;
+
+//** Text color for `<input>`s
+$input-color:                    $color-grey-500 !default;
+//** `<input>` border color
+$input-border:                   #ccc !default;
+
+//** Default `.form-control` border radius
+// This has no effect on `<select>`s in some browsers, due to the limited stylability of `<select>`s in CSS.
+$input-border-radius:            $border-radius-base !default;
+//** Large `.form-control` border radius
+$input-border-radius-large:      $border-radius-large !default;
+//** Small `.form-control` border radius
+$input-border-radius-small:      $border-radius-small !default;
+
+//** Border color for inputs on focus
+$input-border-focus:             $color-accent-500 !default;
+
+//** Placeholder text color
+$input-color-placeholder:        #999 !default;
+
+//** Default `.form-control` height
+$input-height-base:              ($line-height-computed + ($padding-base-vertical * 2) + 2) !default;
+//** Large `.form-control` height
+$input-height-large:             (ceil($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + 2) !default;
+//** Small `.form-control` height
+$input-height-small:             (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2) !default;
+
+//** `.form-group` margin
+$form-group-margin-bottom:       15px !default;
+
+$legend-color:                   $color-grey-700 !default;
+$legend-border-color:            #e5e5e5 !default;
+
+//** Background color for textual input addons
+$input-group-addon-bg:           $color-grey-200 !default;
+//** Border color for textual input addons
+$input-group-addon-border-color: $input-border !default;
+
+//** Disabled cursor for form controls and buttons.
+$cursor-disabled:                default !default;
+
+
+
+// Z-index master list
+
+$zindex-navbar:            1000 !default;
+$zindex-popover:           1060 !default;
+$zindex-tooltip:           1070 !default;
+$zindex-navbar-fixed:      1030 !default;
+$zindex-modal-background:  1040 !default;
+$zindex-modal:             1050 !default;
+$zindex-dropdown:          1060 !default;
+$z-index-1:                10 !default;
+$z-index-2:                20 !default;
+$z-index-3:                30 !default;
+$z-index-4:                40 !default;
+$z-index-5:                50 !default;
+$z-index-override:         9999 !default;
+
+
+
+// Media queries breakpoints
+
+$screen-sm-min:              768px !default;
+$screen-md-min:              992px !default;
+$screen-lg-min:              992px !default;
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+
+
+// Grid system
+
+$grid-columns:              12 !default;
+$grid-gutter-width:         30px !default;
+
+// Navbar collapse
+$grid-float-breakpoint:     $screen-sm-min !default;
+$grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
+
+
+
+// Container sizes
+
+// Small screen / tablet
+$container-tablet:             (720px + $grid-gutter-width) !default;
+$container-sm:                 $container-tablet !default;
+
+// Medium screen / desktop
+$container-desktop:            (940px + $grid-gutter-width) !default;
+$container-md:                 $container-desktop !default;
+
+// Large screen / wide desktop
+$container-large-desktop:      (940px + $grid-gutter-width) !default;
+$container-lg:                 $container-large-desktop !default;
+
+
+
+// Pagination
+
+$pagination-color:             $color-grey-500 !default;
+$pagination-bg:                #fff !default;
+$pagination-border:            #ddd !default;
+
+$pagination-hover-color:       $color-grey-900 !default;
+$pagination-hover-bg:          $color-grey-25 !default;
+$pagination-hover-border:      #ddd !default;
+
+$pagination-active-color:      #fff !default;
+$pagination-active-bg:         $color-primary-500 !default;
+$pagination-active-border:     $color-primary-500 !default;
+
+$pagination-disabled-color:    $color-grey-300 !default;
+$pagination-disabled-bg:       #fff !default;
+$pagination-disabled-border:   #ddd !default;
+
+
+
+// Form states and alerts
+
+$state-primary-text:           $color-primary-500 !default;
+$state-primary-bg:             $color-primary-100 !default;
+$state-primary-border:         darken(adjust-hue($state-primary-bg, -10), 7%) !default;
+
+$state-success-text:           $color-success-500 !default;
+$state-success-bg:             $color-grey-100 !default;
+$state-success-border:         darken(adjust-hue($state-success-bg, -10), 5%) !default;
+
+$state-warning-text:           $color-warning-500 !default;
+$state-warning-bg:             $color-warning-100 !default;
+$state-warning-border:         darken(adjust-hue($state-warning-bg, -10), 5%) !default;
+
+$state-error-text:             $color-error-500 !default;
+$state-error-bg:               $color-error-100 !default;
+$state-error-border:           darken(adjust-hue($state-error-bg, -10), 5%) !default;
+
+
+
+// Modals
+
+//** Padding applied to the modal body
+$modal-inner-padding:         15px !default;
+
+//** Padding applied to the modal title
+$modal-title-padding:         15px !default;
+//** Modal title line-height
+$modal-title-line-height:     $line-height-base !default;
+
+//** Background color of modal content area
+$modal-content-bg:                             #fff !default;
+
+//** Modal backdrop background color
+$modal-backdrop-bg:           #fff !default;
+//** Modal backdrop opacity
+$modal-backdrop-opacity:      .8 !default;
+
+$modal-lg:                    900px !default;
+$modal-md:                    600px !default;
+$modal-sm:                    400px !default;
+
+
+
+// Type
+
+//** Horizontal offset for forms and lists.
+$component-offset-horizontal: 180px !default;
+//** Text muted color
+$text-muted:                  $color-grey-300 !default;
+//** Abbreviations and acronyms border color
+$abbr-border-color:           $color-grey-300 !default;
+//** Headings small color
+$headings-small-color:        $color-grey-300 !default;
+//** Blockquote small color
+$blockquote-small-color:      $color-grey-300 !default;
+//** Blockquote font size
+$blockquote-font-size:        ($font-size-base * 1.25) !default;
+//** Blockquote border color
+$blockquote-border-color:     $color-grey-200 !default;
+//** Page header border color
+$page-header-border-color:    $color-grey-200 !default;
+//** Width of horizontal description list titles
+$dl-horizontal-offset:        $component-offset-horizontal !default;
+//** Horizontal line color.
+$hr-border:                   $color-grey-200 !default;
+
+// context menu sizes
+$context-menu-sm: 200px;
+$context-menu-md: 300px;
+
+// button/input dimensions
+$button-height: 32px;
+$button-border-radius: 3px;
+
+// based on base unit of 7 because that's what Bootstrap does. Not sure why it's 7 here and 5 below.
+
+$base-spacing-unit: 7px;
+$base-spacing-full: $base-spacing-unit * 4; //28px
+$base-spacing-half: $base-spacing-unit * 2; //14px

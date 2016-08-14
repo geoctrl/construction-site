@@ -1,0 +1,23 @@
+.page-head {
+  background-color: $color-grey-25;
+  border-bottom: solid 1px $color-grey-200;
+}
+
+.page-head__section {
+  padding: $base-spacing-half $base-spacing-half 0 $base-spacing-half;
+}
+
+.page-head > .page-head__section:last-child {
+  padding-bottom: $base-spacing-half;
+}
+
+.page-content__padding {
+  padding: $base-spacing-full;
+}
+
+.page-content__section {
+  margin-bottom: $base-spacing-full;
+}
+
+
+// .page-details {}

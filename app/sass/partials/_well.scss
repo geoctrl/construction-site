@@ -1,0 +1,12 @@
+.well {
+  border: solid 1px $color-grey-100;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: $border-radius-base;
+
+  &.well-grey {
+    background-color: $color-grey-25;
+  }
+}
+
