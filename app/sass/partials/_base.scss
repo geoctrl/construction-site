@@ -22,6 +22,15 @@ body, html {
 	mix-blend-mode: normal;
 }
 
+.contact-banner {
+	height: 30px;
+	background-color: darken($color-grey-900, 6%);
+	color: $color-grey-300;
+	text-align: right;
+	line-height: 30px;
+	font-size: 12px;
+}
+
 button {
 	user-select: none;
 	cursor: default;

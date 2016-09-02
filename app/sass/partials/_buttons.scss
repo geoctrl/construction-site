@@ -242,17 +242,17 @@ $btn-transition-duration: 100ms;
 	border-color: transparent;
 	color: #fff;
 
-	svg.icon {
+	svg {
 		fill: #fff;
 	}
 
 	&:hover, &.active {
 		background-color: $color-primary-500;
-		color: #fff;
+		color: $color-grey-900;
 		border-color: transparent;
 
-		svg.icon {
-			fill: #fff;
+		svg {
+			fill: $color-grey-900;
 		}
 	}
 
