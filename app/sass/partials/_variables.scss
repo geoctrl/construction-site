@@ -41,7 +41,7 @@ $color-warning-700: darken($color-warning-500, 16%);
 $color-warning-800: darken($color-warning-500, 24%);
 $color-warning-900: darken($color-warning-500, 32%);
 
-$color-success-500: #86cf82 !default;
+$color-success-500: #5398cf !default;
 $color-success-100: lighten($color-success-500, 32%);
 $color-success-200: lighten($color-success-500, 24%);
 $color-success-300: lighten($color-success-500, 16%);
@@ -72,7 +72,7 @@ $color-primary-light: #E6F1FF !default;
 
 $body-bg: #fff !default;
 $text-color: $color-grey-900 !default;
-$link-color: $color-primary-500 !default;
+$link-color: $color-success-500 !default;
 $link-hover-color: darken($link-color, 15%) !default;
 $link-hover-decoration: underline !default;
 
