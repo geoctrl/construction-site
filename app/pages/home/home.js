@@ -7,6 +7,11 @@ import teamRob from './assets/team-rob.jpg';
 import teamTami from './assets/team-tami.jpg';
 import contactOffice from './assets/contact-office.jpg';
 import logo from './assets/logo.svg';
+import pcNewConstruction from './assets/projects-c-new-construction.svg';
+import pcTenantImprovement from './assets/projects-c-tenant-improvement.svg';
+import prMultiFamily from './assets/projects-r-multifamily.svg';
+import prRemodeling from './assets/projects-r-remodeling.svg';
+import prSingleFamily from './assets/projects-r-single-family.svg';
 import { _images, _thumbnails } from './images';
 
 const directiveName = 'home';
@@ -14,11 +19,11 @@ const directiveName = 'home';
 export default function() {
 
 	let ctrl = function() {
+		"ngInject";
+
 		let vm = this;
 		vm.images = _images;
 		vm.thumbnails = _thumbnails;
-
-
 	};
 
 	let template = `
@@ -46,7 +51,7 @@ export default function() {
 			</div>
 		</section>
 		
-		<section class="home-proof" ng-style="{backgroundImage: 'url(${proofBackground})'}">
+		<section class="home-proof" id="projects" ng-style="{backgroundImage: 'url(${proofBackground})'}">
 			<div class="container">
 				<div class="home-proof__title">
 					Our Projects
@@ -73,16 +78,16 @@ export default function() {
 					<!--</div>-->
 				<!--</div>-->
 				<ul class="home-proof__list">
-					<li>Commercial <span>- New Construction</span></li>
-					<li>Commercial <span>- Tenant Improvement</span></li>
-					<li>Residential <span>- Single Family</span></li>
-					<li>Residential <span>- Multi Family</span></li>
-					<li>Residential <span>- Remodeling</span></li>
+					<li>${pcNewConstruction} <span>New Construction</span> <span class="sub">- Commercial</span></li>
+					<li>${pcTenantImprovement} <span>Tenant Improvement</span> <span class="sub">- Commercial</span></li>
+					<li>${prSingleFamily} <span>Single Family</span> <span class="sub">- Residential</span></li>
+					<li>${prMultiFamily} <span>Multi Family</span> <span class="sub">- Residential</span></li>
+					<li>${prRemodeling} <span>Remodeling</span> <span class="sub">- Residential</span></li>
 				</ul>
 			</div>
 		</section>
 		
-		<section class="home-team">
+		<section class="home-team" id="team">
 			<div class="container">
 				<div class="home-team__title">
 					Our Team
@@ -149,7 +154,7 @@ marketing in multiple markets.</div>
 				</ul>
 			</div>
 		</section>
-		<section class="home-contact">
+		<section class="home-contact" id="contact">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-6">

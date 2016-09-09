@@ -5,6 +5,7 @@ import './sass/main.scss';
 import angular from 'angular';
 import 'angular-local-storage';
 import 'angular-ui-router';
+import 'angular-scroll';
 
 import 'swiper';
 import 'angular-swiper';
@@ -18,7 +19,8 @@ var app = angular.module('contructionSite', [
   // vendor dependencies
   'LocalStorageModule',
   'ui.router',
-	'ksSwiper'
+	'ksSwiper',
+	'duScroll'
 
 ]);
 

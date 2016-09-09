@@ -166,9 +166,22 @@
 	li {
 		font-size: 20px;
 		font-weight: 700;
-		padding: 4px;
+		padding: 2px;
+
+		svg {
+			width: 50px;
+			height: 50px;
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 4px;
+		}
 
 		span {
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		span.sub {
 			color: rgba($color-grey-900, .8);
 			font-style: italic;
 			font-weight: 400;
@@ -250,8 +263,8 @@
 }
 
 .home-team__person-image {
-	width: 60px;
-	height: 60px;
+	width: 100px;
+	height: 100px;
 	margin: 0 auto 10px auto;
 	border-radius: 100px;
 	overflow: hidden;
@@ -268,7 +281,8 @@
 }
 
 .home-team__person-name {
-	font-size: 18px;
+	font-size: 20px;
+	font-weight: 700;
 	margin-bottom: 4px;
 
 	span {
@@ -302,8 +316,13 @@
 		margin-bottom: 40px;
 	}
 
+	.home-team__person {
+		margin-bottom: 20px;
+	}
+
 	.home-team__person-content {
-		margin-left: 80px;
+		margin-left: 120px;
+		min-height: 100px;
 		text-align: left;
 	}
 
@@ -321,6 +340,10 @@
 			font-weight: 700;
 			color: $color-grey-500;
 		}
+	}
+
+	.home-team__person-bio {
+		font-size: 15px;
 	}
 
 

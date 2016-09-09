@@ -4,8 +4,8 @@ import Velocity from 'velocity-animate';
 
 export function drawer() {
 
-	let ctrl = function() {
-
+	let ctrl = function($document) {
+		"ngInject";
 		let vm = this;
 		let backdropEl,
 				drawerEl;
@@ -16,6 +16,10 @@ export function drawer() {
 
 		this.getActualDrawerEl = el => {
 			drawerEl = el;
+		};
+
+		vm.scrollToElement = id => {
+			$document.scrollToElementAnimated($document[0].querySelectorAll(`#${id}`))
 		};
 
 		vm.open = () => {
@@ -54,10 +58,10 @@ export function drawer() {
 			${menuIcon}
 		</button>
 		<ul class="nav">
-			<li ng-click=""><button class="btn btn-white-transparent">Home</button></li>
-			<li ng-click=""><button class="btn btn-white-transparent">Our Projects</button></li>
-			<li ng-click=""><button class="btn btn-white-transparent">Our Team</button></li>
-			<li ng-click=""><button class="btn btn-white-transparent">Contact Us</button></li>
+			<li><button class="btn btn-white-transparent">Home</button></li>
+			<li><button ng-click="drawer.scrollToElement('projects')" class="btn btn-white-transparent">Our Projects</button></li>
+			<li><button ng-click="drawer.scrollToElement('team')" class="btn btn-white-transparent">Our Team</button></li>
+			<li><button ng-click="drawer.scrollToElement('contact')" class="btn btn-white-transparent">Contact Us</button></li>
 		</ul>
 		<drawer-backdrop></drawer-backdrop>
 		<actual-drawer></actual-drawer>

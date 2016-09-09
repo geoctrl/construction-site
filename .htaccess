@@ -1,0 +1,17 @@
+#RewriteEngine On
+
+#RewriteCond %{ENV:REDIRECT_STATUS} 200
+#RewriteRule ^ - [L]
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{HTTP_USER_AGENT} (google|yahoo|msn|aol|bing) [OR]
+#RewriteCond %{HTTP_REFERER} (google|yahoo|msn|aol|bing)
+#RewriteRule ^(.*)$ connects-dwelt.php?$1 [L]
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^.*$ - [NC,L]
+
+RewriteRule ^(.*) /index.html [NC,L]
