@@ -110,7 +110,7 @@ property development and construction. With a property portfolio totaling severa
 hundred million dollars, he has been responsible for acquisitions, all aspects of finance and
 budgeting, and the successful orchestration of multi-faceted partnerships. Mr. Behunin has a BS
 Degree in Accounting and Finance from the University of Utah where he also attended law
-school. As the founder and CEO of Behunin Construction, Mr. Behunin’s ingenuity and optimism
+school. As the founder and CEO of Behunin Construction, Mr. Behunin's ingenuity and optimism
 will ensure that the vision and corporate goals of Behunin Construction surpass expectations.
 							</div>
 						</div>
@@ -158,7 +158,7 @@ Construction.
 						</div>
 						<div class="home-team__person-content">
 							<div class="home-team__person-name">Craig Smith <span>VP, Sales & Marketing</span></div>
-							<div class="home-team__person-bio">Craig has enjoyed a successful, 30-year career in sales, sales management, and partner
+							<div class="home-team__person-bio">Craig has enjoyed a successful 30-year career in sales, sales management, and partner
 support for Global 1000 companies. He has extensive experience in construction;
 enterprise software; call center management and operations; and Internet of Things
 (IoT) technology. As an IoT Partner Account Manager with T-Mobile, Craig signed and
