@@ -104,7 +104,15 @@ export default function() {
 						</div>
 						<div class="home-team__person-content">
 							<div class="home-team__person-name">Don Behunin <span>CEO</span></div>
-							<div class="home-team__person-bio">Bio Forthcoming</div>
+							<div class="home-team__person-bio">
+							Mr. Behunin has spent the past 25 years building a successful career in high-density, multi-family
+property development and construction. With a property portfolio totaling several
+hundred million dollars, he has been responsible for acquisitions, all aspects of finance and
+budgeting, and the successful orchestration of multi-faceted partnerships. Mr. Behunin has a BS
+Degree in Accounting and Finance from the University of Utah where he also attended law
+school. As the founder and CEO of Behunin Construction, Mr. Behunin’s ingenuity and optimism
+will ensure that the vision and corporate goals of Behunin Construction surpass expectations.
+							</div>
 						</div>
 					</li>
 					<li>
@@ -113,7 +121,17 @@ export default function() {
 						</div>
 						<div class="home-team__person-content">
 							<div class="home-team__person-name">Tami Behunin <span>President</span></div>
-							<div class="home-team__person-bio">Bio Forthcoming</div>
+							<div class="home-team__person-bio">
+							As an energetic, innovative entrepreneur, Ms. Behunin has enjoyed a 30-year career in multi-family
+property management during which she has filled multiple management and strategic
+marketing roles. Recognizing a need in the marketplace for a more effective solution for
+managing multi-family assets, Ms. Behunin developed an on-line platform that enables the
+remote management of apartment properties efficiently and profitably. Property managers
+throughout the Rocky Mountain West are now realizing the benefits of this unique product.
+Known for her commitment to excellence and the importance of leveraging technology in
+business, Ms. Behunin brings an invaluable skill-set to the management of Behunin
+Construction.
+							</div>
 						</div>
 					</li>
 					<li>
