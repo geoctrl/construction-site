@@ -84,6 +84,7 @@ export default function() {
 					<li>${prMultiFamily} <span>Multi Family</span> <span class="sub">- Residential</span></li>
 					<li>${prRemodeling} <span>Remodeling</span> <span class="sub">- Residential</span></li>
 				</ul>
+				<gallery></gallery>
 			</div>
 		</section>
 		
@@ -105,13 +106,7 @@ export default function() {
 						<div class="home-team__person-content">
 							<div class="home-team__person-name">Don Behunin <span>CEO</span></div>
 							<div class="home-team__person-bio">
-							Mr. Behunin has spent the past 25 years building a successful career in high-density, multi-family
-property development and construction. With a property portfolio totaling several
-hundred million dollars, he has been responsible for acquisitions, all aspects of finance and
-budgeting, and the successful orchestration of multi-faceted partnerships. Mr. Behunin has a BS
-Degree in Accounting and Finance from the University of Utah where he also attended law
-school. As the founder and CEO of Behunin Construction, Mr. Behunin's ingenuity and optimism
-will ensure that the vision and corporate goals of Behunin Construction surpass expectations.
+Mr. Behunin has spent the past 35 years building a successful career in high-density, multi-family property development and construction. With a property portfolio totaling several hundred million dollars, he has been responsible for acquisitions, all aspects of finance and budgeting, and the successful orchestration of multi-faceted partnerships. Mr. Behunin has a BS Degree in Accounting and Finance from the University of Utah where he also attended law school. He also holds a Class A, Unlimited Construction license. As the founder and CEO of Behunin Construction, Mr. Behunin's ingenuity and optimism will ensure that the vision and corporate goals of Behunin Construction surpass expectations.
 							</div>
 						</div>
 					</li>

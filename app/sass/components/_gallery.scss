@@ -1,0 +1,80 @@
+.gallery__open {
+	display: block;
+	border: solid 2px #404040;
+	border-radius: 6px;
+	text-align: center;
+	padding: 14px;
+	color: #404040;
+	font-size: 16px;
+	font-weight: 700;
+	margin-top: 20px;
+	text-decoration: none;
+	transition: background 200ms ease, color 200ms ease;
+	user-select: none;
+
+	svg {
+		width: 34px;
+		fill: #404040;
+		transition: fill 200ms ease;
+	}
+
+	&:hover {
+		background-color: #404040;
+		color: #fff;
+		text-decoration: none;
+
+		svg {
+			fill: #fff;
+		}
+	}
+
+	@media (min-width: $screen-sm-min) {
+		float: left;
+		margin-left: 80px;
+		margin-top: 90px;
+	}
+}
+
+.gallery {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(#000, .95);
+	z-index: 999;
+	color: #fff;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	overflow: auto;
+
+	h2 {
+		font-weight: 700;
+		margin-bottom: 40px;
+	}
+}
+
+.gallery__section {
+	margin-bottom: 20px;
+	@include clearfix;
+
+	h3 {
+		font-weight: 700;
+		margin-bottom: 20px;
+		font-size: 18px;
+
+		span {
+			font-weight: 300;
+			font-style: italic;
+			font-size: .9em;
+			opacity: .8;
+		}
+	}
+
+	img {
+		float: left;
+		height: 200px;
+		margin-right: 20px;
+		margin-bottom: 20px;
+	}
+}
