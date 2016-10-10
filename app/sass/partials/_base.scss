@@ -18,6 +18,10 @@ body, html {
 	-webkit-font-smoothing: antialiased;
 }
 
+body.no-scroll {
+	overflow: hidden;
+}
+
 .mix-blend-mode-normarl {
 	mix-blend-mode: normal;
 }

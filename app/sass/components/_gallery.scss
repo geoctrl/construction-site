@@ -35,7 +35,20 @@
 	}
 }
 
-.gallery {
+.gallery__close {
+	position: fixed;
+	top: 20px;
+	right: 30px;
+	z-index: 2;
+
+	svg {
+		fill: #fff;
+		width: 20px;
+		height: 20px;
+	}
+}
+
+.gallery__container {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -44,14 +57,25 @@
 	background-color: rgba(#000, .95);
 	z-index: 999;
 	color: #fff;
-	padding-top: 40px;
 	padding-bottom: 40px;
-	overflow: auto;
+	display: none;
+	opacity: 0;
 
 	h2 {
 		font-weight: 700;
 		margin-bottom: 40px;
 	}
+}
+
+.gallery {
+	overflow: auto;
+	position: absolute;
+	padding-top: 40px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
 }
 
 .gallery__section {
