@@ -38,12 +38,7 @@ export default function() {
 				<div class="home-fold__content">
 					<div class="home-fold__title">Building Confidence.</div>
 					<div class="home-fold__tag">
-					In business for over 35 years, Behunin Construction is the contracting partner for discriminating
-					clients seeking superior craftsmanship at a competitive price. With deep expertise in both
-					commercial and residential construction, we have created a multi-million dollar project portfolio
-					throughout the Rocky Mountain West and the surrounding states. Your needs are our needs. Your
-					concerns are our concerns. Our primary objective is to see your job through to completion on-
-					budget, on-time, with minimal hassle for you, our valued customer.
+					With over 35 years of experience, Behunin Construction is the premier contracting partner for customers seeking to realize their dream of a new or upgraded home, or renovated office space. Our rates are competitive, yet craftsmanship is never sacrificed. The quality with which your project will be completed is second to none. Our extensive experience in residential and commercial construction has resulted in a multi-million-dollar project portfolio that covers the Rocky Mountain West and surrounding states. As our customer, your needs are our needs. Your concerns are our concerns. Our primary objective is to see your job through to completion on-budget, on-time, and with minimal hassle for you. At Behunin Construction, we focus on what matters most - seeing that your dream becomes a reality.
 					</div>
 					<!--<div class="home-fold__btn"><a class="btn btn-primary btn-large">Get a Quote</a></div>-->
 					<!--<div class="home-fold__btn"><a class="btn btn-white-line btn-large">Become a Preferred Contractor</a></div>-->
@@ -57,9 +52,7 @@ export default function() {
 					Our Projects
 				</div>
 				<div class="home-proof__tag">
-					With a project portfolio totaling hundreds of millions of dollars, Behunin Construction is one of the
-					premier construction companies in the Rocky Mountain West. Projects range from functional office
-					space to high-end, multi-family complexes to luxury, single-family residences.
+					Behunin Construction's projects extend to an exquisite multi-faceted, multi-million-dollar portfolio. Specializing in functional office spaces, high-end multi-family communities, and luxury single family residences, Behunin Construction is the paramount of the Rocky Mountain West.
 				</div>
 				<!--<div class="home-proof__content-mobile">-->
 			    <!--<ks-swiper-container-->

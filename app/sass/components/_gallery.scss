@@ -70,7 +70,7 @@
 .gallery {
 	overflow: auto;
 	position: absolute;
-	padding-top: 40px;
+	padding: 40px 20px;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -84,8 +84,8 @@
 
 	h3 {
 		font-weight: 700;
-		margin-bottom: 20px;
-		font-size: 18px;
+		margin-bottom: 14px;
+		font-size: 20px;
 
 		span {
 			font-weight: 300;
@@ -100,5 +100,23 @@
 		height: 200px;
 		margin-right: 20px;
 		margin-bottom: 20px;
+	}
+}
+
+.img-group {
+	font-size: 16px;
+	font-weight: 700;
+	display: inline-block;
+	color: #a3a3a3;
+
+	span {
+		margin-top: 2px;
+		display: block;
+		font-size: 12px;
+		font-weight: 400;
+	}
+
+	img {
+		margin-top: 6px;
 	}
 }

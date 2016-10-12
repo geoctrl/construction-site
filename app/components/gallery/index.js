@@ -46,29 +46,49 @@ export default function() {
 		<div class="gallery__container">
 			<button class="gallery__close btn btn-white-transparent btn-square" ng-click="gallery.close()">${closeIcon}</button>
 			<div class="gallery">
-				<div class="container">
+				<div class="container-fluid">
 					<h2 class="gallery__title">Project Image Gallery</h2>
 					<div class="gallery__section">
 						<h3>New Construction <span>- Commercial</span></h3>
-						<img src="/images/brooks-tower.jpg" alt="">
-						<img src="/images/executive-tower.jpg" alt="">
+						<div class="img-group">
+							<div>Brook's Tower <span>Denver, CO</span></div>
+							<img src="/images/brooks-tower.jpg" alt="">						
+						</div>
+						<div class="img-group">
+							<div>Executive Tower <span>Dever, CO</span></div>
+							<img src="/images/executive-tower.jpg" alt="">
+						</div>
+						<div class="img-group">
+							<div>Eisenhower Tunnel <span>Summit, CO</span></div>
+							<img src="/images/tunnel-2.jpg" alt="">						
+							<img src="/images/tunnel-1.jpg" alt="">						
+						</div>
 					</div>
 					<div class="gallery__section">
 						<h3>Multi Family <span>- Residential</span></h3>
-						<img src="/images/jackson-street-ext-2.jpg" alt="">
-						<img src="/images/jackson-street-ext-1.jpg" alt="">
-						<img src="/images/jackson-street-living.jpg" alt="">
-						<img src="/images/jackson-street-bath.jpg" alt="">
+						<div class="img-group">
+							<div>Jackson Street Condominium Renovation <span>Dallas, TX</span></div>
+							<img src="/images/jackson-street-ext-2.jpg" alt="">
+							<img src="/images/jackson-street-ext-1.jpg" alt="">
+							<img src="/images/jackson-street-living.jpg" alt="">
+							<img src="/images/jackson-street-bath.jpg" alt="">						
+						</div>
 					</div>
 					<div class="gallery__section">
 						<h3>Remodeling <span>- Residential</span></h3>
-						<img src="/images/sheldon-kitchen-1.jpg" alt="">
-						<img src="/images/sheldon-kitchen-2.jpg" alt="">
-						<img src="/images/sheldon-shower.jpg" alt="">
-						<img src="/images/sheldon-shower-tile.jpg" alt="">
-						<img src="/images/tyson-bathroom-tub.jpg" alt="">
-						<img src="/images/tyson-bathroom-tub-tile.jpg" alt="">
-						<img src="/images/tyson-bathroom-vanity.jpg" alt="">
+						<div class="img-group">
+							<div>Kitchens</div>
+							<img src="/images/sheldon-kitchen-1.jpg" alt="">
+							<img src="/images/sheldon-kitchen-2.jpg" alt="">
+						</div>
+						<div class="img-group">
+							<div>Bathrooms</div>
+							<img src="/images/sheldon-shower.jpg" alt="">
+							<img src="/images/sheldon-shower-tile.jpg" alt="">
+							<img src="/images/tyson-bathroom-tub.jpg" alt="">
+							<img src="/images/tyson-bathroom-tub-tile.jpg" alt="">
+							<img src="/images/tyson-bathroom-vanity.jpg" alt="">
+						</div>
 					</div>
 				</div>
 			</div>
