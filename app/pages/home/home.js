@@ -52,7 +52,7 @@ export default function() {
 					Our Projects
 				</div>
 				<div class="home-proof__tag">
-					Behunin Construction's projects extend to an exquisite multi-faceted, multi-million-dollar portfolio. Specializing in functional office spaces, high-end multi-family communities, and luxury single family residences, Behunin Construction is the paramount of the Rocky Mountain West.
+					Behunin Construction's projects extend to an exquisite multi-faceted, multi-million-dollar portfolio. Specializing in functional office spaces, high-end multi-family communities, and luxury single family residences, Behunin Construction is the premier builder of the Rocky Mountain West.
 				</div>
 				<!--<div class="home-proof__content-mobile">-->
 			    <!--<ks-swiper-container-->
@@ -137,7 +137,9 @@ Construction.
 						</div>
 						<div class="home-team__person-content">
 							<div class="home-team__person-name">Mark Behunin <span>VP, Construction Services</span></div>
-							<div class="home-team__person-bio">Bio Forthcoming</div>
+							<div class="home-team__person-bio">
+							With 25 years in commercial and residential construction, Mark Behunin is qualified to oversee complex projects with skill and precision. He has learned the construction field "from the ground up", starting out as a laborer and working his way up to Managing Partner of both Behunin Brick and Block and GRM Real Estate, LLC.  Mark has managed construction operations of numerous single family, multi-family and commercial projects throughout Colorado and Texas. He is a Master Tradesman in Tile, Carpentry, Concrete and Jobsite Management.
+							</div>
 						</div>
 					</li>
 					<li>

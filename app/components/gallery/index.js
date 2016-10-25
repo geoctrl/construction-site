@@ -81,7 +81,7 @@ export default function() {
 							<img src="/images/sheldon-kitchen-1.jpg" alt="">
 							<img src="/images/sheldon-kitchen-2.jpg" alt="">
 						</div>
-						<div class="img-group">
+						<div class="img-group img-group--break">
 							<div>Bathrooms</div>
 							<img src="/images/sheldon-shower.jpg" alt="">
 							<img src="/images/sheldon-shower-tile.jpg" alt="">

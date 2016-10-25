@@ -119,4 +119,9 @@
 	img {
 		margin-top: 6px;
 	}
+
+	&.img-group--break {
+		display: block;
+		@include clearfix;
+	}
 }
