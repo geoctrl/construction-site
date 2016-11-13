@@ -68,6 +68,10 @@ export default function() {
 						<h3>Multi Family <span>- Residential</span></h3>
 						<div class="img-group">
 							<div>Jackson Street Condominium Renovation <span>Dallas, TX</span></div>
+							<img src="/images/jackson-street-ext-2-before.jpg" alt="">
+							<img src="/images/jackson-street-ext-1-before.jpg" alt="">
+						</div>
+						<div class="img-group">
 							<img src="/images/jackson-street-ext-2.jpg" alt="">
 							<img src="/images/jackson-street-ext-1.jpg" alt="">
 							<img src="/images/jackson-street-living.jpg" alt="">
@@ -78,16 +82,15 @@ export default function() {
 						<h3>Remodeling <span>- Residential</span></h3>
 						<div class="img-group">
 							<div>Kitchens</div>
-							<img src="/images/sheldon-kitchen-1.jpg" alt="">
-							<img src="/images/sheldon-kitchen-2.jpg" alt="">
+							<img src="/images/kitchen-1.jpg" alt="">
 						</div>
 						<div class="img-group img-group--break">
 							<div>Bathrooms</div>
+							<img src="/images/bathroom-1.jpg" alt="">
 							<img src="/images/sheldon-shower.jpg" alt="">
 							<img src="/images/sheldon-shower-tile.jpg" alt="">
 							<img src="/images/tyson-bathroom-tub.jpg" alt="">
 							<img src="/images/tyson-bathroom-tub-tile.jpg" alt="">
-							<img src="/images/tyson-bathroom-vanity.jpg" alt="">
 						</div>
 					</div>
 				</div>
