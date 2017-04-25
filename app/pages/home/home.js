@@ -105,25 +105,6 @@ Mr. Behunin has spent the past 35 years building a successful career in high-den
 					</li>
 					<li>
 						<div class="home-team__person-image">
-							<img src="${teamTami}" alt="">
-						</div>
-						<div class="home-team__person-content">
-							<div class="home-team__person-name">Tami Behunin <span>President</span></div>
-							<div class="home-team__person-bio">
-							As an energetic, innovative entrepreneur, Ms. Behunin has enjoyed a 30-year career in multi-family
-property management during which she has filled multiple management and strategic
-marketing roles. Recognizing a need in the marketplace for a more effective solution for
-managing multi-family assets, Ms. Behunin developed an on-line platform that enables the
-remote management of apartment properties efficiently and profitably. Property managers
-throughout the Rocky Mountain West are now realizing the benefits of this unique product.
-Known for her commitment to excellence and the importance of leveraging technology in
-business, Ms. Behunin brings an invaluable skill-set to the management of Behunin
-Construction.
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="home-team__person-image">
 							<img src="${teamRob}" alt="">
 						</div>
 						<div class="home-team__person-content">
