@@ -35,7 +35,8 @@ export function drawer() {
 			});
 		};
 
-		vm.close = () => {
+		vm.close = id => {
+		  vm.scrollToElement(id);
 			Velocity(backdropEl, {
 				opacity: 0
 			}, {
@@ -60,6 +61,7 @@ export function drawer() {
 		<ul class="nav">
 			<li><button class="btn btn-white-transparent">Home</button></li>
 			<li><button ng-click="drawer.scrollToElement('projects')" class="btn btn-white-transparent">Our Projects</button></li>
+			<li><button ng-click="drawer.scrollToElement('customers')" class="btn btn-white-transparent">Customers</button></li>
 			<li><button ng-click="drawer.scrollToElement('team')" class="btn btn-white-transparent">Our Team</button></li>
 			<li><button ng-click="drawer.scrollToElement('contact')" class="btn btn-white-transparent">Contact Us</button></li>
 		</ul>
@@ -88,10 +90,11 @@ export function actualDrawer() {
 			<div class="drawer">
 				<button class="btn btn-white-transparent btn-square" ng-click="close()">${closeIcon}</button>
 				<ul>
-					<li ng-click="close()">Home</li>
-					<li ng-click="close()">Our Projects</li>
-					<li ng-click="close()">Our Team</li>
-					<li ng-click="close()">Contact Us</li>
+					<li ng-click="close('home')">Home</li>
+					<li ng-click="close('projects')">Our Projects</li>
+					<li ng-click="close('customers')">Customers</li>
+					<li ng-click="close('team')">Our Team</li>
+					<li ng-click="close('contact')">Contact Us</li>
 				</ul>
 			</div>
 		`

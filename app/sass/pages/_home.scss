@@ -358,7 +358,8 @@
 
 .home-contact {
 	padding: 40px 0;
-	background-color: $color-grey-50;
+	background-color: $color-grey-900;
+	color: #fff;
 }
 
 .home-contact__title {
@@ -422,5 +423,52 @@
 	.home-contact__email {
 		font-size: 20px;
 		margin-top: 16px;
+	}
+}
+
+
+.references {
+	padding: 40px 0;
+	background-color: $color-grey-50;
+}
+
+.references__title {
+	font-size: 32px;
+	font-weight: 900;
+	margin-bottom: 4px;
+}
+
+.references-box {
+	margin: 20px 0 10px 0;
+
+}
+
+.references-box__content {
+	margin-bottom: 8px;
+	font-size: 14px;
+	font-style: italic;
+}
+
+.references-box__name {
+	background-color: $color-primary-500;
+	padding: 6px;
+	border-radius: 3px;
+	display: inline-block;
+	font-weight: 700;
+	font-size: 16px;
+}
+
+@media (min-width: $screen-sm-min) {
+	.references {
+		padding: 100px 0;
+	}
+}
+
+@media (min-width: $screen-md-min) {
+	.references-box__content {
+		font-size: 16px;
+	}
+	.references-box__name {
+		font-size: 18px;
 	}
 }
