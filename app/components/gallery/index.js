@@ -84,18 +84,19 @@ export default function() {
 							<div>Kitchens</div>
 							<img src="/images/kitchen-1.jpg" alt="">
 							<img src="/images/smith-kitchen-after-evening.jpg" alt="">
+							<img src="/images/sheldon-kitchen-1.jpg" alt="">
 						</div>
 						<div class="img-group img-group--break">
 							<div>Bathrooms</div>
 							<img src="/images/bathroom-1.jpg" alt="">
-							<img src="/images/sheldon-shower.jpg" alt="">
 							<img src="/images/sheldon-shower-tile.jpg" alt="">
-							<img src="/images/tyson-bathroom-tub.jpg" alt="">
 							<img src="/images/tyson-bathroom-tub-tile.jpg" alt="">
+							<img src="/images/tyson-bathroom-vanity.jpg" alt="">							
 						</div>
 					</div>
 				</div>
 			</div>
+			
 		</div>
 `;
 
