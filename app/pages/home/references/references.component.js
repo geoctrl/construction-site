@@ -8,7 +8,7 @@ export function ReferencesComponent(app) {
             <div class="col-sm-6">
                 <div class="references-box">
                     <div class="references-box__content">
-                        "I recently contracted with Behunin Construction to renovate the exterior of our home. I've used them in the past, and continue turn to them for any work on my home. I trust them to give me a no nonsense evaluation of what work needs to be done to minimize my costs. And their craftsmanship is exquisite. I’d recommend them to anyone in need of commercial or residential construction services."
+                        "I recently contracted with Behunin Construction to renovate the exterior of our home. I've used them in the past, and continue turn to them for any work on my home. I trust them to give me a no nonsense evaluation of what work needs to be done to minimize my costs. And their craftsmanship is exquisite. I'd recommend them to anyone in need of commercial or residential construction services."
                     </div>
                     <div class="references-box__name">Brian</div>
                 </div>
@@ -23,7 +23,6 @@ export function ReferencesComponent(app) {
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-3"></div>
             <div class="col-sm-6">
                 <div class="references-box">
                     <div class="references-box__content">
@@ -32,7 +31,14 @@ export function ReferencesComponent(app) {
                     <div class="references-box__name">G&S Oil Products</div>
                 </div>
             </div>
-            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <div class="references-box">
+                    <div class="references-box__content">
+                        "We recently contracted with Behunin Construction to construct a darkroom in our facility required for a specific type of test we provide. They completed the work in a timely fashion, and with the upmost concern for the important work being done around them in our lab. We also found their pricing to be very competitive. We recommend Behunin Construction to anyone in need of tenant improvement construction services."
+                    </div>
+                    <div class="references-box__name">Biochemical Lab</div>
+                </div>
+            </div>
         </div>
     </div>
 </section>`
