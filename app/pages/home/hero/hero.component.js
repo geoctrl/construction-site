@@ -1,5 +1,6 @@
 import homeFoldBackground from '../assets/home-fold-background.jpg';
 import logo from '../assets/logo.svg';
+import cert from '../assets/certificate.svg';
 
 export function HeroComponent(app) {
   app.component('heroComponent', {
@@ -20,6 +21,37 @@ export function HeroComponent(app) {
       <!--<div class="home-fold__btn"><a class="btn btn-primary btn-large">Get a Quote</a></div>-->
       <!--<div class="home-fold__btn"><a class="btn btn-white-line btn-large">Become a Preferred Contractor</a></div>-->
     </div>
+      <div class="cert">
+        <div class="cert-message">
+            ${cert}
+            <span>
+                Behunin Construction is fully licensed and insured.
+            </span>
+        </div>        
+        
+        <!--<div class="cert-block-parent">-->
+            <!--<div class="cert-block">-->
+                <!--<div class="cert-block__name">Arvada</div>-->
+                <!--<div class="cert-block__title">General Contractor</div>-->
+                <!--<div class="cert-block__number">#AEC1029</div>-->
+            <!--</div>-->
+            <!--<div class="cert-block">-->
+                <!--<div class="cert-block__name">Brighton</div>-->
+                <!--<div class="cert-block__title">General Contractor</div>-->
+                <!--<div class="cert-block__number">#CO-11946</div>-->
+            <!--</div>-->
+            <!--<div class="cert-block">-->
+                <!--<div class="cert-block__name">Denver</div>-->
+                <!--<div class="cert-block__title">General Contractor</div>-->
+                <!--<div class="cert-block__number">Class A #17860</div>-->
+            <!--</div>-->
+            <!--<div class="cert-block">-->
+                <!--<div class="cert-block__name">Douglas County</div>-->
+                <!--<div class="cert-block__title">General Contractor</div>-->
+                <!--<div class="cert-block__number">#A170303</div>-->
+            <!--</div>-->
+        <!--</div>-->
+      </div>
   </div>
 </section>`
   });
